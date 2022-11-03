@@ -17,7 +17,7 @@ public class MainClass
 	public static void main(String[] args)
 	{
 		
-		int n=3;
+		int n=2;
 		hanoiTowers(n, 'A', 'C', 'B');
 
 	}
@@ -30,7 +30,7 @@ public class MainClass
 			
 			return;
 		}
-		hanoiTowers (n-1, fromRod, toRod, helpRod);
+		hanoiTowers (n-1, fromRod, helpRod, toRod);
 		
 		System.out.println("Take disc " + n + " from rod " + fromRod + " and place it on " + toRod);
 		hanoiTowers (n-1, helpRod, toRod, fromRod);
