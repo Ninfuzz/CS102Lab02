@@ -152,7 +152,7 @@ public class Assignment7_DP
 	    return tempCount;
 	}
 	
-	static int hanoiTowers(int n, char fromRod, char toRod, char helpRod1, char helpRod2)
+	public static int hanoiTowers(int n, char fromRod, char toRod, char helpRod1, char helpRod2)
 	{
 		//Keeps count of the amount of actions taken
 		int tempCount = 0;
