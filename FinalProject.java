@@ -22,8 +22,8 @@ public class FinalProject
 	static double customAns;
 	public static void main(String[] args)
 	{
-		int count = 1;
 		
+		int count = 1;
 		//Variable to hold value that the user gives
 		int choice;
 		//Lets the user choose whether to go to the function menu or to view the audit log
@@ -121,7 +121,7 @@ public class FinalProject
 			{
 				if (custom[c] != null)
 				{
-					custom[c].toString();
+					System.out.println("(Custom Function)");
 				}
 				else
 				{

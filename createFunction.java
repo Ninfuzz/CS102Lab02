@@ -37,27 +37,27 @@ public class createFunction
 	{
 		System.out.println("What operations would you like to include? (choose " + (numOfOperations - 1) + ") (put operations in order)");
 		
-		for (int c = 0; c < numOfOperations;)
+		for (int c = 0; c < numOfOperations - 1;)
 		{
 			System.out.println("Operations left to give: " + (numOfOperations - 1 - c));
 			System.out.println("1 - additon\n2 - subtraction\n3 - multiplication\n4 - division");
-			
-			if (scan.nextInt() == 1)
+			int temp = scan.nextInt();
+			if (temp == 1)
 			{
 				operations[c] = "+";
 				c++;
 			}
-			else if (scan.nextInt() == 2)
+			else if (temp == 2)
 			{
 				operations[c] = "-";
 				c++;
 			}
-			else if ( scan.nextInt() == 3)
+			else if (temp == 3)
 			{
 				operations[c] = "*";
 				c++;
 			}
-			else if (scan.nextInt() == 4)
+			else if (temp == 4)
 			{
 				operations[c] = "/";
 				c++;
@@ -123,7 +123,7 @@ public class createFunction
 				 }
 			 }
 		}
-		System.out.print(this.equation() +" = " + temp);
+		System.out.println(this.equation() +" = " + temp);
 		
 		return temp;
 		
